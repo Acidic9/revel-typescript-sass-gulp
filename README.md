@@ -6,7 +6,7 @@
 
 1. In your terminal, run
    ```
-   git clone https://github.com/Acidic9/revel-typescript-sass-gulp.git
+   git clone https://github.com/Acidic9/revel-typescript-sass-gulp.git my-web-app && cd my-web-app
    ```
 
 2. Install the dependencies
