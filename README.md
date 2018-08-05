@@ -11,7 +11,7 @@
 
 2. Install the dependencies
    ```
-   yarn install
+   yarn install && go get github.com/revel/cmd/revel
    ```
 
 3. Run your app with
