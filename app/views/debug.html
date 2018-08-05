@@ -1,0 +1,45 @@
+<div id="debug-sidebar">
+	<div id="debug-sidebar-toggler" title="Toggle debug menu">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</div>
+
+	<div class="pipelines scrollable-y full-height">
+		<h4>Available pipelines</h4>
+		<dl>
+			{{ range $index, $value := . }}
+			<dt>{{ $index }}</dt>
+			<dd>
+				<pre>
+					{{- $value -}}
+				</pre>
+			</dd>
+			{{ end }}
+		</dl>
+		<h4>Flash</h4>
+		<dl>
+			{{ range $index, $value := .flash }}
+			<dt>{{ $index }}</dt>
+			<dd>
+				<pre>
+					{{- $value -}}
+				</pre>
+			</dd>
+			{{ end }}
+		</dl>
+
+		<h4>Errors</h4>
+		<dl>
+			{{ range $index, $value := .errors }}
+			<dt>{{ $index }}</dt>
+			<dd>
+				<pre>
+					{{- $value -}}
+				</pre>
+			</dd>
+			{{ end }}
+		</dl>
+	</div>
+</div>
+<script src="/public/js/debug.js"></script>

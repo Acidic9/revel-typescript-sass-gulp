@@ -1,0 +1,8 @@
+{{ if .flash }}
+	<script>
+		{{ range $key, $msg := .flash }}
+			console.log('[{{ uppercase $key }}] {{ $msg }}')
+		{{ end }}
+		
+	</script>
+{{ end }}
